@@ -1,0 +1,13 @@
+<nodes>
+    <node id="A1" x="0" y="300"/>
+    <node id="A2" x="300" y="300"/>
+    <node id="A3" x="600" y="300"/>
+
+    <node id="B1" x="0" y="0"/>
+    <node id="B2" x="300" y="0"/>
+    <node id="B3" x="600" y="0"/>
+
+    <node id="C1" x="-300" y="0"/>
+    <node id="C3" x="900" y="0"/>
+    <node id="C2" x="300" y="0" type="traffic_light"/>
+</nodes>

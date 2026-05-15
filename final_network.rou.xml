@@ -1,0 +1,10 @@
+<routes>
+    <vType id="ego_car" accel="2.8" decel="4.5" sigma="0.5" length="5" maxSpeed="70" color="1,0,0"/> <vType id="traffic_car" accel="2.5" decel="4.0" sigma="0.5" length="5" maxSpeed="50"/>
+
+    <route id="ego_route" edges="A1_A2 A2_A3 A3_B3 B3_C3" />
+    <route id="traffic_route" edges="C1_B1 B1_B2 B2_B3" />
+
+    <vehicle id="ego_0" type="ego_car" route="ego_route" depart="0" />
+
+    <flow id="traffic_flow" type="traffic_car" route="traffic_route" begin="0" end="300" period="10" />
+</routes>

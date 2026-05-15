@@ -1,0 +1,13 @@
+<edges>
+    <edge id="C1_B1" from="C1" to="B1" priority="1" numLanes="1" speed="50.0"/>
+    <edge id="B1_B2" from="B1" to="B2" priority="1" numLanes="1" speed="50.0"/>
+    <edge id="B2_B3" from="B2" to="B3" priority="1" numLanes="1" speed="70.0"/>
+    <edge id="B3_C3" from="B3" to="C3" priority="1" numLanes="1" speed="70.0"/>
+
+    <edge id="A1_A2" from="A1" to="A2" priority="1" numLanes="1" speed="50.0"/>
+    <edge id="A2_A3" from="A2" to="A3" priority="1" numLanes="1" speed="50.0"/>
+
+    <edge id="A1_B1" from="A1" to="B1" priority="1" numLanes="1" speed="60.0"/>
+    <edge id="A2_B2" from="A2" to="B2" priority="1" numLanes="1" speed="60.0"/>
+    <edge id="A3_B3" from="A3" to="B3" priority="1" numLanes="1" speed="60.0"/>
+</edges>

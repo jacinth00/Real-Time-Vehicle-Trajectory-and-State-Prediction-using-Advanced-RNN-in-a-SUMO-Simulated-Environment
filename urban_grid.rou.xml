@@ -1,0 +1,13 @@
+<routes>
+    <vType id="ego_car" accel="2.8" decel="4.5" sigma="0.5" length="5" maxSpeed="70" color="1,0,0"/> <vType id="passenger" accel="2.5" decel="4.0" sigma="0.5" length="5" maxSpeed="50"/>
+    <vType id="truck" accel="1.5" decel="3.0" sigma="0.5" length="12" maxSpeed="40" color="0,1,0"/> <route id="ego_route" edges="SW2_SW1 SW1_N2 N2_N3 N3_N4 N4_RE1 RE1_RE2 RE2_RE3 RE3_E1" />
+
+    <route id="main_road_traffic" edges="N1_N2 N2_N3 N3_N4 N4_N5" />
+    <route id="cross_traffic" edges="W1_N3 N3_E1" />
+
+    <vehicle id="ego_0" type="ego_car" route="ego_route" depart="0" />
+
+    <flow id="main_flow" type="passenger" route="main_road_traffic" begin="0" end="600" period="10" />
+    <flow id="truck_flow" type="truck" route="main_road_traffic" begin="20" end="600" period="45" />
+    <flow id="cross_flow" type="passenger" route="cross_traffic" begin="5" end="600" period="15" />
+</routes>

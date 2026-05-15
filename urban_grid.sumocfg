@@ -1,0 +1,11 @@
+<configuration>
+    <input>
+        <net-file value="urban_grid.net.xml"/>
+        <route-files value="urban_grid.rou.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+    </time>
+    <processing>
+        <time-to-teleport value="-1"/> </processing>
+</configuration>

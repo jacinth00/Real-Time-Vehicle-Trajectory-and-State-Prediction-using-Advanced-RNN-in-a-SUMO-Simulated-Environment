@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodes>
+    <!-- City grid nodes (3x2) -->
+    <node id="C1" x="0"   y="300" />
+    <node id="C2" x="300" y="300" type="traffic_light"/>
+    <node id="C3" x="600" y="300" />
+    <node id="C4" x="0"   y="0" />
+    <node id="C5" x="300" y="0" type="traffic_light"/>
+    <node id="C6" x="600" y="0" />
+
+    <!-- Highway nodes (east-west) above/below grid with ramps -->
+    <node id="H_L" x="-300" y="150" />
+    <node id="H_R" x="900"  y="150" />
+
+    <!-- On/off-ramp connectors -->
+    <node id="R1" x="150" y="200" />
+    <node id="R2" x="450" y="200" />
+    <node id="R3" x="150" y="100" />
+    <node id="R4" x="450" y="100" />
+
+    <!-- Some dead ends / service roads -->
+    <node id="S1" x="300" y="375" />
+    <node id="S2" x="300" y="-75" />
+</nodes>

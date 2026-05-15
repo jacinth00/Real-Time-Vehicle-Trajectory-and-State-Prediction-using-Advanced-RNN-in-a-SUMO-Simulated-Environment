@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edges>
+
+    <!-- City horizontal roads (bidirectional) -->
+    <edge id="C1_C2" from="C1" to="C2" numLanes="1" speed="13.9"/>
+    <edge id="C2_C1" from="C2" to="C1" numLanes="1" speed="13.9"/>
+
+    <edge id="C2_C3" from="C2" to="C3" numLanes="1" speed="13.9"/>
+    <edge id="C3_C2" from="C3" to="C2" numLanes="1" speed="13.9"/>
+
+    <edge id="C4_C5" from="C4" to="C5" numLanes="1" speed="13.9"/>
+    <edge id="C5_C4" from="C5" to="C4" numLanes="1" speed="13.9"/>
+
+    <edge id="C5_C6" from="C5" to="C6" numLanes="1" speed="13.9"/>
+    <edge id="C6_C5" from="C6" to="C5" numLanes="1" speed="13.9"/>
+
+    <!-- City vertical roads (bidirectional) -->
+    <edge id="C1_C4" from="C1" to="C4" numLanes="1" speed="11.1"/>
+    <edge id="C4_C1" from="C4" to="C1" numLanes="1" speed="11.1"/>
+
+    <edge id="C2_C5" from="C2" to="C5" numLanes="1" speed="11.1"/>
+    <edge id="C5_C2" from="C5" to="C2" numLanes="1" speed="11.1"/>
+
+    <edge id="C3_C6" from="C3" to="C6" numLanes="1" speed="11.1"/>
+    <edge id="C6_C3" from="C6" to="C3" numLanes="1" speed="11.1"/>
+
+    <!-- Service / corners -->
+    <edge id="C2_S1" from="C2" to="S1" numLanes="1" speed="8.33"/>
+    <edge id="S1_C2" from="S1" to="C2" numLanes="1" speed="8.33"/>
+
+    <edge id="C5_S2" from="C5" to="S2" numLanes="1" speed="8.33"/>
+    <edge id="S2_C5" from="S2" to="C5" numLanes="1" speed="8.33"/>
+
+    <!-- Highway mainline -->
+    <edge id="H_L_H_R" from="H_L" to="H_R" numLanes="3" speed="27.78"/>
+    <edge id="H_R_H_L" from="H_R" to="H_L" numLanes="3" speed="27.78"/>
+
+    <!-- Ramps (bidirectional) -->
+    <edge id="H_L_R1" from="H_L" to="R1" numLanes="1" speed="22.2"/>
+    <edge id="R1_H_L" from="R1" to="H_L" numLanes="1" speed="22.2"/>
+
+    <edge id="R1_C2" from="R1" to="C2" numLanes="1" speed="13.9"/>
+    <edge id="C2_R1" from="C2" to="R1" numLanes="1" speed="13.9"/>
+
+    <edge id="C2_R2" from="C2" to="R2" numLanes="1" speed="13.9"/>
+    <edge id="R2_C2" from="R2" to="C2" numLanes="1" speed="13.9"/>
+
+    <edge id="R2_H_R" from="R2" to="H_R" numLanes="1" speed="22.2"/>
+    <edge id="H_R_R2" from="H_R" to="R2" numLanes="1" speed="22.2"/>
+
+    <edge id="H_L_R3" from="H_L" to="R3" numLanes="1" speed="22.2"/>
+    <edge id="R3_H_L" from="R3" to="H_L" numLanes="1" speed="22.2"/>
+
+    <edge id="R3_C5" from="R3" to="C5" numLanes="1" speed="13.9"/>
+    <edge id="C5_R3" from="C5" to="R3" numLanes="1" speed="13.9"/>
+
+    <edge id="C5_R4" from="C5" to="R4" numLanes="1" speed="13.9"/>
+    <edge id="R4_C5" from="R4" to="C5" numLanes="1" speed="13.9"/>
+
+    <edge id="R4_H_R" from="R4" to="H_R" numLanes="1" speed="22.2"/>
+    <edge id="H_R_R4" from="H_R" to="R4" numLanes="1" speed="22.2"/>
+
+</edges>

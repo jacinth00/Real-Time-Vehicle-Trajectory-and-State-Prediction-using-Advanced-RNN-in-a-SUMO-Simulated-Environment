@@ -1,0 +1,27 @@
+<routes>
+    <!-- Vehicle types -->
+    <vType id="car_red" accel="2.6" decel="4.5" sigma="0.5" length="5" maxSpeed="33.33" guiShape="passenger" color="255,0,0"/>
+    <vType id="car_blue" accel="2.6" decel="4.5" sigma="0.5" length="5" maxSpeed="33.33" guiShape="passenger" color="0,0,255"/>
+    <vType id="car_green" accel="2.6" decel="4.5" sigma="0.5" length="5" maxSpeed="33.33" guiShape="passenger" color="0,200,0"/>
+    <vType id="truck_gray" accel="1.5" decel="3.0" sigma="0.5" length="7" maxSpeed="25.0" guiShape="truck" color="128,128,128"/>
+    <vType id="bus_y" accel="1.2" decel="3.0" sigma="0.5" length="12" maxSpeed="20.0" guiShape="bus" color="255,200,0"/>
+
+    <!-- City and highway routes -->
+    <route id="r_cw" edges="C1_C2 C2_C3 C3_C6"/>
+    <route id="r_cc" edges="C6_C5 C5_C4 C4_C1"/>
+    <route id="r_hwy" edges="H_L_H_R"/>
+
+    <!-- Corrected ML-controlled vehicle routes -->
+    <route id="r_on_1" edges="H_L_R1 R1_C2 C2_R2 R2_H_R"/>
+    <route id="r_on_2" edges="H_L_R3 R3_C5 C5_R4 R4_H_R"/>
+
+    <!-- ML-controlled vehicles -->
+    <vehicle id="ego_0" type="car_blue" route="r_on_1" depart="0.0" departLane="best"/>
+    <vehicle id="ego_1" type="car_green" route="r_on_2" depart="2.0" departLane="best"/>
+
+    <!-- Normal traffic -->
+    <flow id="flow1" type="car_red" route="r_hwy" begin="0.0" end="200" number="10" departInterval="2"/>
+    <flow id="flow2" type="truck_gray" route="r_on_1" begin="5.0" end="200" number="4" departInterval="10"/>
+    <flow id="flow3" type="car_blue" route="r_cw" begin="10.0" end="200" number="12" departInterval="3"/>
+    <flow id="flow4" type="bus_y" route="r_cc" begin="15.0" end="200" number="3" departInterval="40"/>
+</routes>
